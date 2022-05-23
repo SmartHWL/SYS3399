@@ -1,0 +1,166 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 123, 133, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DARMCM1.DLL V1.19.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.29.0
+Dialog DLL:      TARMCM1.DLL V1.14.0.0
+ 
+<h2>Project:</h2>
+E:\SYS3399\SL58128_MiniSys.uvprojx
+Project File Date:  05/23/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'debug'
+compiling croutine.c...
+compiling timer4Tick.c...
+compiling list.c...
+compiling BSP_uart.c...
+compiling event_groups.c...
+compiling queue.c...
+compiling stream_buffer.c...
+compiling heap_4.c...
+compiling tasks.c...
+compiling timers.c...
+compiling UserTASK.c...
+compiling SL_main.c...
+compiling BSP_dma.c...
+compiling SL_niv.c...
+assembling startup_SC32F58128.s...
+compiling FreeRTOS_CLI.c...
+compiling BSP_gpio.c...
+compiling UARTCommandConsole.c...
+compiling Sample-CLI-commands.c...
+compiling port.c...
+compiling BSP_iic.c...
+compiling BSP_adc.c...
+compiling BSP_pwm.c...
+compiling devInit.c...
+compiling SC32F58128_dma.c...
+compiling serial.c...
+compiling SC32F58128_adc.c...
+compiling SC32F58128_gpio.c...
+compiling SC32F58128_SysClkCfg.c...
+compiling SC32F58128_iap.c...
+compiling SC32F58128_iic.c...
+compiling SC32F58128_can.c...
+compiling SC32F58128_cmpss.c...
+compiling system_SC32F58128.c...
+compiling SC32F58128_uart.c...
+compiling SC32F58128_qep.c...
+compiling SC32F58128_pwm.c...
+compiling SC32F58128_spi.c...
+compiling SC32F58128_wdt.c...
+compiling SC32F58128_timer.c...
+linking...
+Program Size: Code=17620 RO-data=1052 RW-data=272 ZI-data=27200  
+".\Objects\GeneralMotorCtrl.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: SILAN
+                https://github.com/Silanpack/Pack/raw/main/SILAN.SC32F58xx_DFP.1.4.0.pack
+                SILAN.SC32F58xx_DFP.1.4.0
+                Silan SC32F58xx Device Family Pack
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.SC32F58xx_DFP.1.3.1.pack
+                Keil.SC32F58xx_DFP.1.3.1
+                Silan ARM Cortex-M0 Device Family Pack
+   * Component: ADC Version: 1.0.0
+   * Component: CAN Version: 1.0.0
+   * Component: CMPSS Version: 1.0.0
+   * Component: DMA Version: 1.0.0
+   * Component: GPIO Version: 1.0.0
+   * Component: IAP Version: 1.0.0
+   * Component: IIC Version: 1.0.0
+   * Component: PWM Version: 1.0.0
+   * Component: QEP Version: 1.0.0
+   * Component: SPI Version: 1.0.0
+   * Component: SystemClock Version: 1.0.0
+   * Component: TIMER Version: 1.0.0
+   * Component: UART Version: 1.0.0
+   * Component: WDT Version: 1.0.0
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_debug
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Device\Include
+  C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include
+  C:\Keil_v5\ARM\PACK\SILAN\SC32F58xx_DFP\1.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: Keil::Device:Driver:ADC:1.0.0
+      Source file:   Driver\source\SC32F58128_adc.c
+
+   * Component: Keil::Device:Driver:CAN:1.0.0
+      Source file:   Driver\source\SC32F58128_can.c
+
+   * Component: Keil::Device:Driver:CMPSS:1.0.0
+      Source file:   Driver\source\SC32F58128_cmpss.c
+
+   * Component: Keil::Device:Driver:DMA:1.0.0
+      Source file:   Driver\source\SC32F58128_dma.c
+
+   * Component: Keil::Device:Driver:GPIO:1.0.0
+      Source file:   Driver\source\SC32F58128_gpio.c
+
+   * Component: Keil::Device:Driver:IAP:1.0.0
+      Source file:   Driver\source\SC32F58128_iap.c
+
+   * Component: Keil::Device:Driver:IIC:1.0.0
+      Source file:   Driver\source\SC32F58128_iic.c
+
+   * Component: Keil::Device:Driver:PWM:1.0.0
+      Source file:   Driver\source\SC32F58128_pwm.c
+
+   * Component: Keil::Device:Driver:QEP:1.0.0
+      Source file:   Driver\source\SC32F58128_qep.c
+
+   * Component: Keil::Device:Driver:SPI:1.0.0
+      Source file:   Driver\source\SC32F58128_spi.c
+
+   * Component: Keil::Device:Driver:SystemClock:1.0.0
+      Source file:   Driver\source\SC32F58128_SysClkCfg.c
+
+   * Component: Keil::Device:Driver:TIMER:1.0.0
+      Source file:   Driver\source\SC32F58128_timer.c
+
+   * Component: Keil::Device:Driver:UART:1.0.0
+      Source file:   Driver\source\SC32F58128_uart.c
+
+   * Component: Keil::Device:Driver:WDT:1.0.0
+      Source file:   Driver\source\SC32F58128_wdt.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\system_SC32F58128.c
+      Source file:   Device\Source\ARM\startup_SC32F58128.s
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>

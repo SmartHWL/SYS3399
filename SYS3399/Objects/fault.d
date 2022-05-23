@@ -1,0 +1,9 @@
+.\objects\fault.o: source\User\Fault.c
+.\objects\fault.o: source\User\Fault.h
+.\objects\fault.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\fault.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\fault.o: source\User\ErrCode.h
+.\objects\fault.o: source\User\f_FuncCode.h
+.\objects\fault.o: source\User\UserConfig.h
+.\objects\fault.o: source\User\Control&Filter.h
+.\objects\fault.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

@@ -1,0 +1,16 @@
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\source\SC32F58128_adc.c
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_adc.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Device\Include\SC32F58128.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_CM0.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Device\Include\system_SC32F58128.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Device\Include\SC32F58128.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\IQMathLib.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\MultCtrl.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\DivCtrl.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\Cordic.h
+.\objects\sc32f58128_adc.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_iap.h
