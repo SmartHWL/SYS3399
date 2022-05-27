@@ -44,8 +44,8 @@ int main(void)
    vRegisterSampleCLICommands();
 	
 												
-  xTaskCreate((TaskFunction_t )AppUart_Motor,  /* 任务入口函数 */
-                        (const char*    )"AppUart_Motor",/* 任务名字 */
+  xTaskCreate((TaskFunction_t )UserTASK,  /* 任务入口函数 */
+                        (const char*    )"UserTASK",/* 任务名字 */
                         (uint16_t       )128,  /* 任务栈大小 */
                         (void*          )NULL,/* 任务入口函数参数 */
                         (UBaseType_t    )1, /* 任务的优先级 */

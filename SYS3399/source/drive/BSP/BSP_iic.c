@@ -49,11 +49,15 @@ void BSP_I2cStart(void)
 *************************************************/
 void BSP_I2cInit(void)
 {
-    	GPIO_MuxSel(GPIO_32,IIC_SDA_32);
-  GPIO_MuxSel(GPIO_33,IIC_SCL_33);
-	GPIO_PullUpDownSel(GPIO_32, PULL_UP);
-	GPIO_PullUpDownSel(GPIO_33, PULL_UP);
-    
+  GPIO_MuxSel(I2C_SDA_PIN,IIC_SDA_32);
+  GPIO_MuxSel(I2C_SCL_PIN,IIC_SCL_33);
+	GPIO_PullUpDownSel(I2C_SDA_PIN, PULL_UP);
+	GPIO_PullUpDownSel(I2C_SCL_PIN, PULL_UP);
+	
+	
+	GPIO_OutputEnable(I2C_CS_PIN);
+  GPIO_SetHigh(I2C_CS_PIN);
+	
 //	GPIO_MuxSel(GPIO_28,IIC_SDA_28);
 //  GPIO_MuxSel(GPIO_29,IIC_SCL_29);
 //	GPIO_PullUpDownSel(GPIO_28, PULL_UP);
@@ -72,9 +76,9 @@ void BSP_I2cInit(void)
  Function:    u16RwI2cBus
  Description: ∂¡–¥I2Cπ‹¿Ì
  Input:      u8Mode: ∂¡/–¥/≤È—Ø
- Output:      
- Return: 
- Others: 
+ Output:
+ Return:
+ Others:
 *************************************************/
 uint16_t u16RwI2cBus(uint8_t u8Mode,uint8_t adrValue,uint8_t reValue,uint8_t setValue)
 {

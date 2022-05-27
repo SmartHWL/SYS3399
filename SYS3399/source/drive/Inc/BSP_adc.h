@@ -47,9 +47,31 @@
 
 
 
-#define  ADCSOCTRIG       5 //
-#define  ADCINDLY         0 //
+#define  ADCSOCTRIG       5 
+#define  ADCINDLY         0 
 #define  ADCACQPS         9
+
+#define ANALOG_MCU_IN1_PIN        GPIO_80
+#define ANALOG_MCU_IN2_PIN				GPIO_81
+#define ANALOG_MCU_IN3_PIN				GPIO_82
+#define ANALOG_MCU_IN4_PIN				GPIO_83
+
+//      ADCµÄ¿Ú                              ADCË³Ðò
+#define ADCSOC0_CHNL  	0  /*CHARGECURR  ADC->ADCRESULT4*/
+#define ADCSOC1_CHNL  	1  /*DETSTOP1    ADC->ADCRESULT5*/
+#define ADCSOC2_CHNL  	2	 /*DETSTOP2    ADC->ADCRESULT6*/
+#define ADCSOC3_CHNL  	3  /*Rain 			 ADC->ADCRESULT7*/
+
+#define ADCSOC4_CHNL  	4  /*RN ADC->ADCRESULT0*/        
+#define ADCSOC5_CHNL  	5	 /*RP ADC->ADCRESULT1*/											
+#define ADCSOC6_CHNL  	6	 /*LN ADC->ADCRESULT2*/												
+#define ADCSOC7_CHNL  	7	 /*LP ADC->ADCRESULT3*/		
+												
+#define ADCSOC8_CHNL  	8/*CHARGEVOL   ADC->ADCRESULT8*/
+#define ADCSOC9_CHNL  	9/*BUSVOL 		 ADC->ADCRESULT9*/
+#define ADCSOC10_CHNL   10/*BATTERY 	 ADC->ADCRESULT10*/
+
+
 /*******************************************************************************
  * Typedefs, structs and enums
  ******************************************************************************/

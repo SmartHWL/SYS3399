@@ -77,23 +77,23 @@ xComPortHandle xSerialPortInitMinimal( unsigned long ulWantedBaud, unsigned port
   if( ( xRxedChars != serINVALID_QUEUE ) && ( xCharsForTx != serINVALID_QUEUE ) )
   {
     /* UART Gpio Config */
-    GPIO_MuxSel(GPIO_CLI_TXD, UART2_LS_TXD_22);
-    GPIO_MuxSel(GPIO_CLI_RXD, UART2_LS_RXD_23);
+//    GPIO_MuxSel(GPIO_CLI_TXD, UART2_LS_TXD_22);
+//    GPIO_MuxSel(GPIO_CLI_RXD, UART2_LS_RXD_23);
 
-    GPIO_PullUpDownSel(GPIO_CLI_RXD, PULL_UP);
+//    GPIO_PullUpDownSel(GPIO_CLI_RXD, PULL_UP);
 
-    UartInit(2, ulWantedBaud, UART_BIT8, PARITY_NONE, STOPBITS_ONE, UART_FIFO_DISABLE, UART_FIFO_DISABLE);
-    CLR_INT_ALL(2);
-    UART_INT_EN_TX(2);
-    UART_INT_EN_RX(2);
-    UART_INT_EN_OE(2);
-    UART_TX_EN(2);
-    UART_RX_EN(2);
-    UART_EN(2);
-    
-    NVIC_ClearPendingIRQ(UART12_IRQn);
-    NVIC_SetPriority(UART12_IRQn,3);
-    NVIC_EnableIRQ(UART12_IRQn);
+//    UartInit(2, ulWantedBaud, UART_BIT8, PARITY_NONE, STOPBITS_ONE, UART_FIFO_DISABLE, UART_FIFO_DISABLE);
+//    CLR_INT_ALL(2);
+//    UART_INT_EN_TX(2);
+//    UART_INT_EN_RX(2);
+//    UART_INT_EN_OE(2);
+//    UART_TX_EN(2);
+//    UART_RX_EN(2);
+//    UART_EN(2);
+//    
+//    NVIC_ClearPendingIRQ(UART12_IRQn);
+//    NVIC_SetPriority(UART12_IRQn,3);
+//    NVIC_EnableIRQ(UART12_IRQn);
   }
   else
   {

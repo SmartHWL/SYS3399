@@ -23,4 +23,12 @@
 .\objects\serial.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_Uart.h
 .\objects\serial.o: .\include\drive\BSP\BSP_gpio.h
 .\objects\serial.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_Gpio.h
+.\objects\serial.o: .\source\drive\Inc\BSP_pwm.h
+.\objects\serial.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_pwm.h
+.\objects\serial.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\IQmathLib.h
+.\objects\serial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\serial.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\MultCtrl.h
+.\objects\serial.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\DivCtrl.h
+.\objects\serial.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\Cordic.h
+.\objects\serial.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_bmsk.h
 .\objects\serial.o: source\FreeRTOS-Plus-CLI\serial.h

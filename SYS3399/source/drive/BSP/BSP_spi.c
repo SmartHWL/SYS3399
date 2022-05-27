@@ -60,7 +60,7 @@ void BSP_SpiInit(void){
   
   SPI_Init(SPI0, &SPI_Cfg_Init);
   
-//  SPI_LoopBackCmd(SPI0, ENABLE);
+  SPI_LoopBackCmd(SPI0, ENABLE);
 
   InitSPI0Gpio();
 
@@ -79,28 +79,21 @@ void BSP_SpiInit(void){
   * @endcode
   * @Note:
 */
-void InitSPI0Gpio()
-{
+void InitSPI0Gpio(void){
+	
   /* SPI0 Gpio Config */
-  GPIO_MuxSel(GPIO_SPI0_CLK, SSP0_CLK_18);
-#if GPIO_SPI0_FFS_CTRL == HARD
-  GPIO_MuxSel(GPIO_SPI0_FFS, SSP0_FSS_19);
-  GPIO_PullUpDownSel(GPIO_SPI0_FFS, PULL_UP);
-#elif GPIO_SPI0_FFS_CTRL == SOFT
   GPIO_OutputEnable(GPIO_SPI0_FFS);
-#else
-  
-#endif 
+	
   GPIO_MuxSel(GPIO_SPI0_TXD, SSP0_TXD_16);
   GPIO_MuxSel(GPIO_SPI0_RXD, SSP0_RXD_17);
-
+  GPIO_MuxSel(GPIO_SPI0_CLK, SSP0_CLK_18);
+	
   GPIO_OpenDrainEnable(GPIO_SPI0_RXD);
   GPIO_PullUpDownSel(GPIO_SPI0_RXD, PULL_UP);
   GPIO_OutputHighCapabilityEnable(GPIO_SPI0_TXD);
-
+	
   SPI_Cmd(SPI0, ENABLE);
 }
-
 
 /**
   * @brief      SPI transmits one byte.

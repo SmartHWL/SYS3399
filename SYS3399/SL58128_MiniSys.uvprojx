@@ -337,7 +337,7 @@
               <MiscControls>--diag_suppress=1 --diag_suppress=177 --diag_suppress=550</MiscControls>
               <Define>MOTOR_AXIS = 1</Define>
               <Undefine></Undefine>
-              <IncludePath>.\include\drive\BSP;.\include\drive\M0DRV;.\include\drive\HAL;.\include\lib;.\include\pfc;.\include\user;.\include\lib\math_blocks\v4.0;.\include\drive\HAL;.\include\motorLib;.\include\Hisense_Leovel0_include\common;.\source\FreeRTOS-Kernel\portable\RVDS\ARM_CM0;.\source\FreeRTOS-Kernel\include;.\source\FreeRTOS-Plus-CLI;.\source\drive\Inc;.\source\User</IncludePath>
+              <IncludePath>.\include\drive\BSP;.\include\drive\M0DRV;.\include\drive\HAL;.\include\lib;.\include\pfc;.\include\user;.\include\lib\math_blocks\v4.0;.\include\drive\HAL;.\include\motorLib;.\include\Hisense_Leovel0_include\common;.\source\FreeRTOS-Kernel\portable\RVDS\ARM_CM0;.\source\FreeRTOS-Kernel\include;.\source\FreeRTOS-Plus-CLI;.\source\drive\Inc;.\source\User;.\HARDWARE\QMI8658C</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -470,6 +470,11 @@
               <FileType>1</FileType>
               <FilePath>.\source\drive\BSP\BSP_iic.c</FilePath>
             </File>
+            <File>
+              <FileName>BSP_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\source\drive\BSP\BSP_spi.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -559,6 +564,16 @@
               <FileName>serial.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\source\FreeRTOS-Plus-CLI\serial.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>HARDWARE</GroupName>
+          <Files>
+            <File>
+              <FileName>QMI8658C_IIC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HARDWARE\QMI8658C\QMI8658C_IIC.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1034,6 +1049,11 @@
               <FileType>1</FileType>
               <FilePath>.\source\drive\BSP\BSP_iic.c</FilePath>
             </File>
+            <File>
+              <FileName>BSP_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\source\drive\BSP\BSP_spi.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1123,6 +1143,16 @@
               <FileName>serial.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\source\FreeRTOS-Plus-CLI\serial.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>HARDWARE</GroupName>
+          <Files>
+            <File>
+              <FileName>QMI8658C_IIC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HARDWARE\QMI8658C\QMI8658C_IIC.c</FilePath>
             </File>
           </Files>
         </Group>

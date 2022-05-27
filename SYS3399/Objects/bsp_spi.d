@@ -1,0 +1,14 @@
+.\objects\bsp_spi.o: source\drive\BSP\BSP_spi.c
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Device\Include\SC32F58128.h
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_CM0.h
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Device\Include\system_SC32F58128.h
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Device\Include\SC32F58128.h
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_gpio.h
+.\objects\bsp_spi.o: .\source\drive\Inc\BSP_spi.h
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_spi.h
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_func_share.h
+.\objects\bsp_spi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

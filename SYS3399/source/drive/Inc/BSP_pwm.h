@@ -21,6 +21,21 @@
 #define DEAD_TIME_CLK  (1 * 80000 / 1000)
 
 
+
+typedef enum
+{
+  PWM_CH0,
+	PWM_CH1,
+	PWM_CH2,
+	PWM_CH3,
+	PWM_CH4,
+	PWM_CH5,
+	PWM_CH6,
+	PWM_CH7
+}e_PWMCH;
+
+void PWM_PIN_SEL(uint8_t ch);
+void PWM_CFG(uint8_t u8Ch, uint32_t u32Period, uint8_t u8Polsel, uint16_t u16DeadTime);
 extern void BSP_PwmInit(void);
 extern void motor_stop(void);
 extern void motor_start(void);

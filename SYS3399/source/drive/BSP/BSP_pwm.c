@@ -43,8 +43,36 @@
 #define UP_H_DOWN_L 					(4)   							
 #define PREDRIVER_MODE 				(UP_H_DOWN_H) 
 
-void PWM_PIN_SEL()
+void PWM_PIN_SEL(uint8_t ch)
 {
+	switch(ch){
+		case PWM_CH0:{
+			GPIO_MuxSel(GPIO_0, 1);
+      GPIO_MuxSel(GPIO_1, 1);
+		}break;
+		case PWM_CH1:{
+			GPIO_MuxSel(GPIO_2, 1);
+      GPIO_MuxSel(GPIO_3, 1);
+		}break;
+		case PWM_CH2:{
+			GPIO_MuxSel(GPIO_4, 1);
+      GPIO_MuxSel(GPIO_5, 1);
+		}break;
+		case PWM_CH3:{
+			GPIO_MuxSel(GPIO_6, 1);
+      GPIO_MuxSel(GPIO_7, 1);
+		}break;
+		case PWM_CH4:{
+			GPIO_MuxSel(GPIO_8, 1);
+      GPIO_MuxSel(GPIO_9, 1);
+		}break;
+		case PWM_CH5:{
+			GPIO_MuxSel(GPIO_10, 1);
+      GPIO_MuxSel(GPIO_11, 1);
+		}break;
+		default:
+			break;
+	}
 //    GPIO_MuxSel(GPIO_0, 1); /* PWM0A */
 //    GPIO_MuxSel(GPIO_1, 1); /* PWM0B */
 //    GPIO_MuxSel(GPIO_2, 1); /* PWM1A */
@@ -59,6 +87,7 @@ void PWM_PIN_SEL()
 
 void PWM_CFG(uint8_t u8Ch, uint32_t u32Period, uint8_t u8Polsel, uint16_t u16DeadTime)
 {
+	  
     PWM[u8Ch]->TBPRD = u32Period;	                    /* 计数器周期 */
     PWM[u8Ch]->TBPHS = 0;                               /* 不装载相位值 */
 
@@ -404,10 +433,9 @@ void BSP_PwmInit(void)
 {
     uint8_t i;
     
-    PWM_PIN_SEL();
-    
     for(i = 0; i < 3; i++)
     {
+			PWM_PIN_SEL(i);
        PWM_CFG(i, PWM_PERIOD, PREDRIVER_MODE, DEAD_TIME_CLK); 
     }
 

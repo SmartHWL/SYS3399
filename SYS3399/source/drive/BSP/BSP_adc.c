@@ -56,60 +56,18 @@
 /**
   * @brief  get sampled data.
   */
-//////
 
-
-#define GPIO_CHARGE_CURRENT_AD  GPIO_80
-#define GPIO_EMG_STOP1_AD				GPIO_81
-#define GPIO_EMG_STOP2_AD				GPIO_82
-#define GPIO_RAIN_AD						GPIO_83
-#define GPIO_RN_AD              GPIO_84
-#define GPIO_RP_AD							GPIO_85
-#define GPIO_LN_AD							GPIO_86
-#define GPIO_LP_AD							GPIO_87
-#define GPIO_CHARGE_VOL_AD      GPIO_89
-#define GPIO_BUS_VOL_AD					GPIO_90
-
-
-
-//#define ADC_LP			ADC->ADCRESULT3
+//#define ADC_LP			ADC->ADCRESULT3     
 //#define ADC_LN			ADC->ADCRESULT2
 //#define ADC_RP      ADC->ADCRESULT1
 //#define ADC_RN      ADC->ADCRESULT0
 
-
-//      ADCµÄ¿Ú                              ADCË³Ðò
-#define ADCSOC0_CHNL  	0  /*CHARGECURR  ADC->ADCRESULT4*/
-#define ADCSOC1_CHNL  	1  /*DETSTOP1    ADC->ADCRESULT5*/
-#define ADCSOC2_CHNL  	2	 /*DETSTOP2    ADC->ADCRESULT6*/
-#define ADCSOC3_CHNL  	3  /*Rain 			 ADC->ADCRESULT7*/
-
-#define ADCSOC4_CHNL  	4  /*RN ADC->ADCRESULT0*/        
-#define ADCSOC5_CHNL  	5	 /*RP ADC->ADCRESULT1*/											
-#define ADCSOC6_CHNL  	6	 /*LN ADC->ADCRESULT2*/												
-#define ADCSOC7_CHNL  	7	 /*LP ADC->ADCRESULT3*/		
-												
-#define ADCSOC8_CHNL  	8/*CHARGEVOL   ADC->ADCRESULT8*/
-#define ADCSOC9_CHNL  	9/*BUSVOL 		 ADC->ADCRESULT9*/
-#define ADCSOC10_CHNL   10/*BATTERY 	 ADC->ADCRESULT10*/
-
-
-void AD_PIN_SEL()
-{
+void AD_PIN_SEL(){
 	
-	
-    GPIO_ModeSel(GPIO_CHARGE_CURRENT_AD, GPIO_MODE_ANALOG); 
-    GPIO_ModeSel(GPIO_EMG_STOP1_AD, GPIO_MODE_ANALOG);
-    GPIO_ModeSel(GPIO_EMG_STOP2_AD, GPIO_MODE_ANALOG);
-    GPIO_ModeSel(GPIO_RAIN_AD, GPIO_MODE_ANALOG);
-    GPIO_ModeSel(GPIO_RN_AD, GPIO_MODE_ANALOG); 
-    GPIO_ModeSel(GPIO_RP_AD, GPIO_MODE_ANALOG);
-    GPIO_ModeSel(GPIO_LN_AD, GPIO_MODE_ANALOG);
-    GPIO_ModeSel(GPIO_LP_AD, GPIO_MODE_ANALOG);
-    GPIO_ModeSel(GPIO_CHARGE_VOL_AD, GPIO_MODE_ANALOG);
-    GPIO_ModeSel(GPIO_BUS_VOL_AD, GPIO_MODE_ANALOG);	
-	
-
+  GPIO_ModeSel(ANALOG_MCU_IN1_PIN, GPIO_MODE_ANALOG); 
+  GPIO_ModeSel(ANALOG_MCU_IN2_PIN, GPIO_MODE_ANALOG);
+  GPIO_ModeSel(ANALOG_MCU_IN3_PIN, GPIO_MODE_ANALOG);
+  GPIO_ModeSel(ANALOG_MCU_IN4_PIN, GPIO_MODE_ANALOG);
 }
 
 /**

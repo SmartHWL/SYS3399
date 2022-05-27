@@ -58,6 +58,7 @@ Note: In this software, the function is used in motor control.
 #include "osc.h"
 #include "BSP_adc.h"
 #include "BSP_pwm.h"
+#include "BSP_spi.h"
 /******************************************************************************
 * global data for the project
 *******************************************************************************/
@@ -195,26 +196,26 @@ void mg_DeviceSystemInit(void)
 /**
   * @brief  Initialize Peripherals Related with Application.
   */
-void mg_DevicePeripheralInit(void)
-{
+void mg_DevicePeripheralInit(void){
+	
 	/* GPIO Init */
 	BSP_GpioInit();
 
 	/* Timer Init */
 	mg_TimerInit();
-
+	
+	/* SPI Init */
+  BSP_SpiInit();
+	
 	/* DMA Init */
 //	DMA_Init();
 
 	/* UART Init */
-	BSP_UartInit();
+	//BSP_UartInit();
 	
-	BSP_PwmInit();
+	//BSP_PwmInit();
 	
-	BSP_AdcInit();
-	
-	
-	
+	//BSP_AdcInit();
 	
 }
 

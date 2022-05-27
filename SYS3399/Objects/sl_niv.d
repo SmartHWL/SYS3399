@@ -17,6 +17,14 @@
 .\objects\sl_niv.o: .\include\drive\HAL\osc.h
 .\objects\sl_niv.o: .\include\drive\BSP\BSP_gpio.h
 .\objects\sl_niv.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_Gpio.h
+.\objects\sl_niv.o: .\source\drive\Inc\BSP_pwm.h
+.\objects\sl_niv.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_pwm.h
+.\objects\sl_niv.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\IQmathLib.h
+.\objects\sl_niv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\sl_niv.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\MultCtrl.h
+.\objects\sl_niv.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\DivCtrl.h
+.\objects\sl_niv.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\Cordic.h
+.\objects\sl_niv.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_bmsk.h
 .\objects\sl_niv.o: .\source\drive\Inc\BSP_iic.h
 .\objects\sl_niv.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_iic.h
 .\objects\sl_niv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

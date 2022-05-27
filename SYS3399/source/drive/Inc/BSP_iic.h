@@ -7,6 +7,11 @@
 #define I2C_MSG_BUFFER_SIZE  Bufferlength	/* »º´æ¸öÊý */
 #define I2C_SUCCESS   1
 #define I2C_FAIL      0
+
+#define I2C_SDA_PIN   GPIO_32
+#define I2C_SCL_PIN   GPIO_33
+#define I2C_CS_PIN    GPIO_26
+
 extern IIC_InfoDef IICInfo;
 
 
