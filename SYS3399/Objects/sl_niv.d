@@ -28,3 +28,4 @@
 .\objects\sl_niv.o: .\source\drive\Inc\BSP_iic.h
 .\objects\sl_niv.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_iic.h
 .\objects\sl_niv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\sl_niv.o: .\HARDWARE\ENC_ABZ\Enc_ABZ.h

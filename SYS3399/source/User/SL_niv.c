@@ -35,7 +35,7 @@
 #include "osc.h"
 #include "BSP_gpio.h"
 #include "BSP_iic.h"
-
+#include "Enc_ABZ.h"
 
 /******************************************************************************
  * Global data for the project
@@ -365,11 +365,24 @@ void ECAP2_IRQHandler(void)
 * @param  None
 * @retval None
 */
+uint16_t LookZ;
 void EQEP0_IRQHandler(void)
 {
+	if(EQEP0->QFLG_b.IEL){
+    strEncABZFun.pvEncZRevise(&strEncABZ);
+    //LookZ++;
+    EQEP0->QCLR_b.IEL = 1;
+  }
+	if(EQEP0->QFLG_b.UTO){
+    //strEncABZFun.pvEncZRevise(&strEncABZ);
+		LookZ=EQEP0->QPOSLAT;
+		EQEP0->QPOSCNT=0;
+    EQEP0->QCLR_b.UTO = 1;
+  }
 }
 
-
+int s32MotorSpeedArray[5]={0};
+int s32AveMotorSpeed=0;
 /**
 * @brief  This function handles EQEP1 interrupt request.
 * @param  None
@@ -377,6 +390,33 @@ void EQEP0_IRQHandler(void)
 */
 void EQEP1_IRQHandler(void)
 {
+	int MotorSpeed=0;
+	static uint8_t count=0;
+	static int s32SumMotorSpeed=0;
+	if(EQEP1->QFLG_b.UTO){
+		
+		MotorSpeed=EQEP1->QPOSLAT;
+		
+		s32MotorSpeedArray[4]=s32MotorSpeedArray[3];
+		s32MotorSpeedArray[3]=s32MotorSpeedArray[2];
+		s32MotorSpeedArray[2]=s32MotorSpeedArray[1];
+		s32MotorSpeedArray[1]=s32MotorSpeedArray[0];
+		s32MotorSpeedArray[0]=MotorSpeed;
+		
+		if(count<7)count++;
+		if(count>5){
+			for(uint8_t i=0;i<5;i++)
+			  s32SumMotorSpeed+=s32MotorSpeedArray[i];
+		}
+		s32AveMotorSpeed=(int)(s32SumMotorSpeed/5);
+		
+		if(s32AveMotorSpeed>5000)s32AveMotorSpeed=s32AveMotorSpeed-10000;
+		s32AveMotorSpeed=s32AveMotorSpeed*6;//(EQEP1->QPOSLAT*1000*60)/10000
+		s32SumMotorSpeed=0;
+		
+		EQEP1->QPOSCNT=0;
+    EQEP1->QCLR_b.UTO = 1;
+  }
 }
 
 /**

@@ -1,0 +1,10 @@
+.\objects\24cxx.o: HARDWARE\24CXX\24CXX.c
+.\objects\24cxx.o: HARDWARE\24CXX\24CXX.h
+.\objects\24cxx.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Device\Include\SC32F58128.h
+.\objects\24cxx.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_CM0.h
+.\objects\24cxx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\24cxx.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\24cxx.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\24cxx.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\24cxx.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Device\Include\system_SC32F58128.h
+.\objects\24cxx.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Device\Include\SC32F58128.h

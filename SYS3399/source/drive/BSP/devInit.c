@@ -59,6 +59,7 @@ Note: In this software, the function is used in motor control.
 #include "BSP_adc.h"
 #include "BSP_pwm.h"
 #include "BSP_spi.h"
+#include "BSP_qep.h"
 /******************************************************************************
 * global data for the project
 *******************************************************************************/
@@ -154,6 +155,14 @@ void mg_SetIRQ(void)
   NVIC_ClearPendingIRQ(TIMER0_IRQn);
   NVIC_SetPriority(TIMER0_IRQn,2);
 	NVIC_EnableIRQ(TIMER0_IRQn);
+	
+	 NVIC_ClearPendingIRQ(EQEP0_IRQn);
+    NVIC_SetPriority(EQEP0_IRQn,0);
+    NVIC_EnableIRQ(EQEP0_IRQn); 
+	
+	NVIC_ClearPendingIRQ(EQEP1_IRQn);
+    NVIC_SetPriority(EQEP1_IRQn,0);
+    NVIC_EnableIRQ(EQEP1_IRQn); 
   __enable_irq();
 	
 }
@@ -216,6 +225,8 @@ void mg_DevicePeripheralInit(void){
 	//BSP_PwmInit();
 	
 	//BSP_AdcInit();
+	
+	BSP_QepInit();
 	
 }
 

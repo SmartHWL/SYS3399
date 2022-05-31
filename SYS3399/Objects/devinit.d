@@ -31,3 +31,4 @@
 .\objects\devinit.o: .\source\drive\Inc\BSP_spi.h
 .\objects\devinit.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_spi.h
 .\objects\devinit.o: C:\Keil_v5\ARM\PACK\Keil\SC32F58xx_DFP\1.3.1\Driver\include\SC32F58128_func_share.h
+.\objects\devinit.o: .\include\drive\BSP\BSP_qep.h

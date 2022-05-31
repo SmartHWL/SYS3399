@@ -48,7 +48,6 @@
 #define Ki 0.002f//积分增益支配率的陀螺仪偏见的衔接
 #define HALFT 0.001f//采样周期的一半
 
-
 typedef struct 
 {
 	int_least16_t mqi_buff[12];
